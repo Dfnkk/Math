@@ -7,6 +7,24 @@
             body {
                 text-align: center;
             }
+
+            #add {
+                border-radius: 25px;
+                width: 10%;
+                height: 10%;
+                background-color: white;
+                cursor: pointer;
+                font-size: 1.9rem;
+            }
+
+            #sub {
+                border-radius: 25px;
+                width: 10%;
+                height: 10%;
+                background-color: white;
+                cursor: pointer;
+                font-size: 1.9rem;
+            }
         </style>
     </head>
     <body>
@@ -15,7 +33,24 @@
         <a target="_blank" href="sub.html"><button id="sub">Subtraction</button></a>
 
         <script>
-            
+            let add = document.getElementById('add');
+            let sub = document.getElementById('sub');
+
+            add.onmousedown = function() {
+                add.style.backgroundColor = 'orange';
+            }
+
+            add.onmouseup = function() {
+                add.style.backgroundColor = 'red';
+            }
+
+            sub.onmousedown = function() {
+                sub.style.backgroundColor = 'orange';
+            }
+
+            sub.onmouseup = function() {
+                sub.style.backgroundColor = 'red';
+            }
         </script>
     </body>
 </html>
